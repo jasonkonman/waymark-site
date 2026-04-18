@@ -1,0 +1,102 @@
+/* Waymark Design System Tokens */
+/* Canonical source: WaymarkDesignSystem.swift */
+/* Light mode (default) */
+
+:root {
+  /* Brand Colors */
+  --wm-brand: #2B7A5F;
+  --wm-brand-soft: #E8F5EE;
+
+  /* Accent Colors */
+  --wm-accent: #E88639;
+  --wm-accent-soft: #FFF3E8;
+
+  /* Surface Colors */
+  --wm-surface: #FAFCFD;
+  --wm-surface-elevated: #FFFFFF;
+  --wm-surface-grouped: #F0F2F5;
+
+  /* Text Colors */
+  --wm-text-primary: #1A1D21;
+  --wm-text-secondary: #6B7280;
+
+  /* Border */
+  --wm-border-subtle: #E5E8EB;
+
+  /* Semantic Colors */
+  --wm-success: #16A34A;
+  --wm-warning: #D97706;
+  --wm-danger: #DC2626;
+  --wm-info: #2563EB;
+
+  /* Radius Scale */
+  --wm-radius-sm: 8px;
+  --wm-radius-md: 12px;
+  --wm-radius-lg: 16px;
+
+  /* Shadow */
+  --wm-shadow-card: 0 1px 3px rgba(0, 0, 0, 0.04);
+
+  /* Typography Scale */
+  --wm-font-body-semibold: 500 1rem / 1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --wm-font-subheading: 600 0.9375rem / 1.4 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --wm-font-headline: 700 1.125rem / 1.3 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --wm-font-caption: 400 0.75rem / 1.4 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --wm-font-footnote: 400 0.8125rem / 1.4 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Component-specific spacing */
+  --wm-spacing-xs: 4px;
+  --wm-spacing-sm: 8px;
+  --wm-spacing-md: 12px;
+  --wm-spacing-lg: 16px;
+  --wm-spacing-xl: 24px;
+  --wm-spacing-2xl: 32px;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Brand Colors */
+    --wm-brand: #3EBF8A;
+    --wm-brand-soft: #1A2E25;
+
+    /* Accent Colors */
+    --wm-accent: #F0A05A;
+    --wm-accent-soft: #2A2014;
+
+    /* Surface Colors */
+    --wm-surface: #161818;
+    --wm-surface-elevated: #1E2022;
+    --wm-surface-grouped: #111315;
+
+    /* Text Colors */
+    --wm-text-primary: #F0F2F5;
+    --wm-text-secondary: #9CA3AF;
+
+    /* Border */
+    --wm-border-subtle: #374151;
+
+    /* Semantic Colors */
+    --wm-success: #4ADE80;
+    --wm-warning: #FBBF24;
+    --wm-danger: #F87171;
+    --wm-info: #60A5FA;
+  }
+}
+
+/* Utility opacity functions for component tints */
+:root {
+  --wm-brand-opacity-12: rgba(43, 122, 95, 0.12);
+  --wm-brand-opacity-18: rgba(43, 122, 95, 0.18);
+  --wm-accent-opacity-12: rgba(232, 134, 57, 0.12);
+  --wm-accent-opacity-16: rgba(232, 134, 57, 0.16);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --wm-brand-opacity-12: rgba(62, 191, 138, 0.12);
+    --wm-brand-opacity-18: rgba(62, 191, 138, 0.18);
+    --wm-accent-opacity-12: rgba(240, 160, 90, 0.12);
+    --wm-accent-opacity-16: rgba(240, 160, 90, 0.16);
+  }
+}
